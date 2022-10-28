@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: var(--blanco);
+}
+
+:root {
+  --negro: #333;
+  --blanco: #eee;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../src/img/bkg-cloud-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.weather-card {
+  border: 2px solid var(--blanco);
+  width: 25rem;
+  height: 20rem;
+  border-radius: .5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, .75);
+}
+
+.info-temperature {
+  display: flex;
+  align-items: center;
+}
+
+.info-temperature .container-img {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.info-temperature .container-degrees {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-temperature .container-degrees .btn-change {
+  margin-top: .5rem;
+  width: 6rem;
+  background-color: var(--blanco);
+  color: var(--negro);
+  border: 1px solid var(--negro);
+  padding: .25rem 0;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+
+.info-aditional {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-aditional .container-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-aditional .container-humidity {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-aditional .container-wind {
+  display: flex;
+  flex-direction: column;
+}
+
+.temperature {
+  font-size: 4rem;
+}
+
+.icon-weather {
+  height: 10rem;
+}
